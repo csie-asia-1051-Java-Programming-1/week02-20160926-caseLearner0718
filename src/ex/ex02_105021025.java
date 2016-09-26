@@ -6,12 +6,25 @@ package ex;
  * Date: 2016/09/26
  * Author: 1050210XX 周永振老師
  */
+import java.util.Scanner;
+public class ex02_105021025 {
 
-public class ex02_1050210XX {
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Scanner scn = new Scanner(System.in);
+		System.out.println("請輸入座標");
+		System.out.print("x=");
+		int x = scn.nextInt();
+		System.out.print("y=");
+		int y = scn.nextInt();
+		int dis=x*x+y*y;
+		if(dis<=10000){
+			System.out.println("點在圓內");
+		}
+		else{
+			System.out.println("點在圓外");
+		}
 	}
 
 }
